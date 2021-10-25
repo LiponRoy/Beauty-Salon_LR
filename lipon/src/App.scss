@@ -1,0 +1,96 @@
+.App {
+	text-align: center;
+}
+
+.Navbar {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(26, 45, 218, 0.74);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	// padding: 20px 90px;
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 16px;
+		// padding: 4px;
+		&:hover {
+			font-weight: 600;
+		}
+	}
+}
+
+// top bar
+.topBar {
+	width: 100%;
+	height: 70px;
+	background-color: yellowgreen;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	.logo {
+		height: 70px;
+		// flex: 3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		span {
+			color: white;
+			font-size: 40px;
+		}
+	}
+	.contactUs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 70px;
+		span:first-child {
+			font-size: 21px;
+			font-weight: 500;
+		}
+		span:last-child {
+			font-size: 14px;
+			margin-top: 5px;
+		}
+	}
+	.emailUs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 70px;
+		span:first-child {
+			font-size: 21px;
+			font-weight: 500;
+		}
+		span:last-child {
+			font-size: 14px;
+			margin-top: 5px;
+		}
+		// flex: 3;
+	}
+	.FollowUs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 70px;
+		span:first-child {
+			font-size: 21px;
+			font-weight: 500;
+		}
+		span:last-child {
+			font-size: 14px;
+			margin-top: 5px;
+		}
+
+		.socialIcon {
+			color: white;
+			font-size: 18px;
+		}
+	}
+}

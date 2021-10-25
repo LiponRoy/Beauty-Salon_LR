@@ -1,10 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Navbar from './component/navbar/Navbar';
+import TopBar from './component/topbar/TopBar';
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Bangladesh</h1>
+			<TopBar></TopBar>
+			<Navbar></Navbar>
 		</div>
 	);
 }
