@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaAngular, FaGithub } from 'react-icons/fa';
+import { FaAngular, FaGithub, FaPaypal } from 'react-icons/fa';
 const TopBar = () => {
 	return (
 		<>
@@ -20,7 +20,7 @@ const TopBar = () => {
 					<div className="socialIcon">
 						<FaAngular></FaAngular>
 						<FaGithub></FaGithub>
-						<FaAngular></FaAngular>
+						<FaPaypal></FaPaypal>
 					</div>
 				</div>
 			</div>

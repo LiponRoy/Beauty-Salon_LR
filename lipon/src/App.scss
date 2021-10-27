@@ -1,11 +1,16 @@
 .App {
-	text-align: center;
+	// text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 .Navbar {
 	width: 100%;
 	height: 50px;
-	background-color: rgba(26, 45, 218, 0.74);
+	background-color: rgba(196, 196, 196, 0.795);
+	position: fixed;
+	top: 70px;
+	z-index: 100;
 
 	display: flex;
 	align-items: center;
@@ -13,7 +18,7 @@
 	// padding: 20px 90px;
 	a {
 		text-decoration: none;
-		color: white;
+		color: rgb(24, 23, 23);
 		font-size: 16px;
 		// padding: 4px;
 		&:hover {
@@ -26,8 +31,11 @@
 .topBar {
 	width: 100%;
 	height: 70px;
-	background-color: yellowgreen;
-
+	background-color: rgba(34, 11, 134, 0.726);
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -91,6 +99,146 @@
 		.socialIcon {
 			color: white;
 			font-size: 18px;
+		}
+	}
+}
+////Fast slide
+.mainSld {
+	//margin: 20px 10px;
+
+	.carddMe {
+		.iteams {
+			.imgPart {
+				height: 100vh;
+				position: relative;
+				// background-color: brown;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				.textAll {
+					text-align: center;
+					color: rgb(255, 255, 255);
+					padding: 2px;
+					position: absolute;
+					bottom: 90px;
+					left: 100px;
+				}
+			}
+		}
+	}
+
+	.slick-arrow.slick-prev {
+		background-color: rgba(241, 240, 243, 0.678);
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+
+		position: absolute;
+		left: 8px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		z-index: 5;
+
+		&:hover {
+			background-color: rgb(255, 255, 255);
+		}
+	}
+	.slick-arrow.slick-prev::before {
+		// display: none;
+		content: '\276E';
+		color: rgb(22, 22, 22);
+		font-size: 40px;
+		z-index: 5;
+	}
+
+	.slick-arrow.slick-next {
+		background-color: rgba(233, 232, 236, 0.637);
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+
+		position: absolute;
+		right: 8px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		z-index: 5;
+
+		&:hover {
+			background-color: rgb(255, 255, 255);
+		}
+	}
+
+	.slick-arrow.slick-next::before {
+		// display: none;
+		content: '\276F';
+		color: rgb(27, 26, 26);
+		font-size: 40px;
+		z-index: 5;
+	}
+}
+
+// card images
+.cardHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	flex-wrap: wrap;
+
+	.card {
+		background-color: rgb(104, 47, 6);
+		width: 280px;
+		height: 500px;
+		margin: 16px;
+		border-radius: 12px;
+		color: white;
+		position: relative;
+		overflow: hidden;
+
+		.cardImage {
+			img {
+				width: 100%;
+				height: 200px;
+				margin-bottom: 10px;
+				background-size: cover;
+				border-radius: 12px;
+				transition: all 0.5s ease;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+		.cardName {
+			background-color: chocolate;
+			padding: 8px;
+		}
+		.cardDescription {
+			// text-align: center;
+			padding: 8px;
+		}
+		a {
+			text-decoration: none;
+			background-color: chocolate;
+			color: white;
+			padding: 8px;
+			text-align: center;
+			display: block;
+			border-radius: 4px;
+			position: absolute;
+			left: 10px;
+			right: 10px;
+			margin: auto;
+			bottom: 20px;
 		}
 	}
 }
